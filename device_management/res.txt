@@ -1,0 +1,865 @@
+cc -o dev_mgr gen/soapClient.c gen/soapC.c dev_mgr.c /usr/share/gsoap/custom/duration.c /usr/share/gsoap/plugin/httpda.c /usr/share/gsoap/plugin/smdevp.c /usr/share/gsoap/plugin/threads.c -lgsoap -L /usr/lib/ -L /usr -lgsoapssl -lopenssl -g -I gen -I /usr/share/gsoap/plugin -I /usr/share/gsoap/import -I /usr/share/gsoap/custom -DWITH_OPENSSL 
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_recv_raw':
+(.text+0x1340): multiple definition of `soap_recv_raw'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x11d0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_recv':
+(.text+0x1b20): multiple definition of `soap_recv'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1510): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_getchar':
+(.text+0x2130): multiple definition of `soap_getchar'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1840): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_code':
+(.text+0x21b0): multiple definition of `soap_code'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x18c0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_code_str':
+(.text+0x2210): multiple definition of `soap_code_str'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1920): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_code_bits':
+(.text+0x2480): multiple definition of `soap_code_bits'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1b90): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_code_list':
+(.text+0x2560): multiple definition of `soap_code_list'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1c70): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_move':
+(.text+0x25f0): multiple definition of `soap_move'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1d00): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_tell':
+(.text+0x2640): multiple definition of `soap_tell'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1d50): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_utf8len':
+(.text+0x2670): multiple definition of `soap_utf8len'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1d80): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_strtrim':
+(.text+0x26a0): multiple definition of `soap_strtrim'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1db0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_wstrtrim':
+(.text+0x2700): multiple definition of `soap_wstrtrim'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1e10): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_new_block':
+(.text+0x2760): multiple definition of `soap_new_block'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1e70): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_push_block':
+(.text+0x27b0): multiple definition of `soap_push_block'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1ec0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_flush_raw':
+(.text+0x2820): multiple definition of `soap_flush_raw'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1f30): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_flush':
+(.text+0x2980): multiple definition of `soap_flush'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2090): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_send_raw':
+(.text+0x2ae0): multiple definition of `soap_send_raw'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2110): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_send':
+(.text+0x2cc0): multiple definition of `soap_send'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x22f0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_send2':
+(.text+0x2d00): multiple definition of `soap_send2'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2330): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_send3':
+(.text+0x2d40): multiple definition of `soap_send3'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2370): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_pututf8':
+(.text+0x2d90): multiple definition of `soap_pututf8'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x23c0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_push_block_max':
+(.text+0x3090): multiple definition of `soap_push_block_max'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2900): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_pop_block':
+(.text+0x30c0): multiple definition of `soap_pop_block'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2930): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_update_pointers':
+(.text+0x3110): multiple definition of `soap_update_pointers'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2980): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_size_block':
+(.text+0x32b0): multiple definition of `soap_size_block'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2b20): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_first_block':
+(.text+0x32f0): multiple definition of `soap_first_block'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2b60): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_next_block':
+(.text+0x3340): multiple definition of `soap_next_block'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2bb0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_block_size':
+(.text+0x3390): multiple definition of `soap_block_size'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2c00): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_end_block':
+(.text+0x33b0): multiple definition of `soap_end_block'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2c20): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_putsizesoffsets':
+(.text+0x3470): multiple definition of `soap_putsizesoffsets'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2ce0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_putoffsets':
+(.text+0x3650): multiple definition of `soap_putoffsets'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2ec0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_size':
+(.text+0x3750): multiple definition of `soap_size'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2fc0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_getsizes':
+(.text+0x37a0): multiple definition of `soap_getsizes'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x3010): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_getoffsets':
+(.text+0x3870): multiple definition of `soap_getoffsets'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x30e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_getposition':
+(.text+0x3980): multiple definition of `soap_getposition'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x31f0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_pop_namespace':
+(.text+0x3a60): multiple definition of `soap_pop_namespace'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x32d0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_match_namespace':
+(.text+0x3ac0): multiple definition of `soap_match_namespace'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x3330): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_tag_cmp':
+(.text+0x3c30): multiple definition of `soap_tag_cmp'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x34a0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_code_int':
+(.text+0x3d70): multiple definition of `soap_code_int'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x35e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_get':
+(.text+0x3dc0): multiple definition of `soap_get'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x3630): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_getutf8':
+(.text+0x4630): multiple definition of `soap_getutf8'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x3ea0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_push_namespace':
+(.text+0x4c70): multiple definition of `soap_push_namespace'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x44e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_match_tag':
+(.text+0x4e60): multiple definition of `soap_match_tag'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x46d0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_match_array':
+(.text+0x4fe0): multiple definition of `soap_match_array'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x4850): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_closesock':
+(.text+0x5790): multiple definition of `soap_closesock'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x48d0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_force_closesock':
+(.text+0x58b0): multiple definition of `soap_force_closesock'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x49a0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_decode_key':
+(.text+0x58e0): multiple definition of `soap_decode_key'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x49d0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_decode_val':
+(.text+0x58f0): multiple definition of `soap_decode_val'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x49e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_get_header_attribute':
+(.text+0x5910): multiple definition of `soap_get_header_attribute'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x4a00): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_extend_url':
+(.text+0x59a0): multiple definition of `soap_extend_url'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x4a90): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_extend_url_query':
+(.text+0x5bb0): multiple definition of `soap_extend_url_query'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x4ca0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_encode_url':
+(.text+0x5c50): multiple definition of `soap_encode_url'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x4d40): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_hash':
+(.text+0x7080): multiple definition of `soap_hash'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x4e10): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_del':
+(.text+0x70f0): multiple definition of `soap_del'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x4e80): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_pointer_lookup':
+(.text+0x7100): multiple definition of `soap_pointer_lookup'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x4e90): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_pointer_enter':
+(.text+0x7160): multiple definition of `soap_pointer_enter'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x4ef0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_array_pointer_lookup':
+(.text+0x72a0): multiple definition of `soap_array_pointer_lookup'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5030): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_end_count':
+(.text+0x7300): multiple definition of `soap_end_count'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5090): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_embedded':
+(.text+0x7330): multiple definition of `soap_embedded'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x50c0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_reference':
+(.text+0x7380): multiple definition of `soap_reference'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5110): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_array_reference':
+(.text+0x7450): multiple definition of `soap_array_reference'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x51e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_is_embedded':
+(.text+0x7550): multiple definition of `soap_is_embedded'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x52e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_is_single':
+(.text+0x75d0): multiple definition of `soap_is_single'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5360): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_embedded':
+(.text+0x7620): multiple definition of `soap_set_embedded'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x53b0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_embed':
+(.text+0x7640): multiple definition of `soap_embed'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x53d0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_embedded_id':
+(.text+0x7750): multiple definition of `soap_embedded_id'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x54e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_lookup':
+(.text+0x7880): multiple definition of `soap_lookup'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5610): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_enter':
+(.text+0x78e0): multiple definition of `soap_enter'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5670): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_malloc':
+(.text+0x79a0): multiple definition of `soap_malloc'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5730): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_memdup':
+(.text+0x7a30): multiple definition of `soap_memdup'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x57c0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_strdup':
+(.text+0x7a80): multiple definition of `soap_strdup'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5810): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_attachment_forward':
+(.text+0x7ae0): multiple definition of `soap_attachment_forward'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5870): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_current_namespace':
+(.text+0x7bc0): multiple definition of `soap_current_namespace'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5950): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_wstrdup':
+(.text+0x7d40): multiple definition of `soap_wstrdup'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5ad0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_save_block':
+(.text+0x7db0): multiple definition of `soap_save_block'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5b40): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_encode_url_string':
+(.text+0x7f00): multiple definition of `soap_encode_url_string'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5c90): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o):(.rodata+0x600): multiple definition of `soap_base64o'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.rodata+0x5e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_delete':
+(.text+0x8250): multiple definition of `soap_delete'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x5fe0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_delegate_deletion':
+(.text+0x8320): multiple definition of `soap_delegate_deletion'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x60b0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_link':
+(.text+0x83c0): multiple definition of `soap_link'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x6150): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_unlink':
+(.text+0x8450): multiple definition of `soap_unlink'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x61e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_lookup_type':
+(.text+0x8500): multiple definition of `soap_lookup_type'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x6290): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_begin_shaky':
+(.text+0x8540): multiple definition of `soap_begin_shaky'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x62d0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_end_shaky':
+(.text+0x8560): multiple definition of `soap_end_shaky'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x62f0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_id_smart':
+(.text+0x8570): multiple definition of `soap_id_smart'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x6300): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_id_nullify':
+(.text+0x85e0): multiple definition of `soap_id_nullify'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x6370): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_resolve':
+(.text+0x8670): multiple definition of `soap_resolve'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x6400): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_id_lookup':
+(.text+0x8ac0): multiple definition of `soap_id_lookup'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x6850): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_id_forward':
+(.text+0x8e20): multiple definition of `soap_id_forward'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x6bb0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_id_enter':
+(.text+0x9050): multiple definition of `soap_id_enter'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x6de0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_end_send_flush':
+(.text+0x92f0): multiple definition of `soap_end_send_flush'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x7080): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_free_temp':
+(.text+0x9740): multiple definition of `soap_free_temp'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x7290): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_done':
+(.text+0x98f0): multiple definition of `soap_done'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x7440): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_poll':
+(.text+0x1e300): multiple definition of `soap_poll'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x19550): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_cleanup':
+(.text+0x9cd0): multiple definition of `soap_cleanup'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x7750): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_free':
+(.text+0x9ce0): multiple definition of `soap_free'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x7760): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_open_logfile':
+(.text+0x9d00): multiple definition of `soap_open_logfile'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x7780): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_recv_logfile':
+(.text+0x9d40): multiple definition of `soap_set_recv_logfile'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x77c0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_sent_logfile':
+(.text+0x9d50): multiple definition of `soap_set_sent_logfile'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x77d0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_test_logfile':
+(.text+0x9d60): multiple definition of `soap_set_test_logfile'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x77e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_free_stream':
+(.text+0x9d70): multiple definition of `soap_free_stream'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x77f0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_init_REQUIRE_lib_v20830':
+(.text+0x9de0): multiple definition of `soap_init_REQUIRE_lib_v20830'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x7810): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_new_REQUIRE_lib_v20830':
+(.text+0xa6a0): multiple definition of `soap_new_REQUIRE_lib_v20830'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x7fb0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_initialize':
+(.text+0xa6d0): multiple definition of `soap_initialize'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x7fe0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_begin':
+(.text+0xa6e0): multiple definition of `soap_begin'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x7ff0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_get_version':
+(.text+0xa800): multiple definition of `soap_get_version'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x8110): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_local_namespaces':
+(.text+0xa960): multiple definition of `soap_set_local_namespaces'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x8270): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_copy_stream':
+(.text+0xaa50): multiple definition of `soap_copy_stream'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x8360): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_version':
+(.text+0xb340): multiple definition of `soap_set_version'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x8a80): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_namespaces':
+(.text+0xb3e0): multiple definition of `soap_set_namespaces'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x8b20): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_tagsearch':
+(.text+0xb560): multiple definition of `soap_tagsearch'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x8ca0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_lookup_ns':
+(.text+0xb7d0): multiple definition of `soap_lookup_ns'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x8f10): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_element_end_out':
+(.text+0xb950): multiple definition of `soap_element_end_out'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x9090): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_check_and_mark':
+(.text+0xba90): multiple definition of `soap_check_and_mark'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x9180): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_mark_lookup':
+(.text+0xbb60): multiple definition of `soap_mark_lookup'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x9250): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_mark_cycle':
+(.text+0xbc00): multiple definition of `soap_mark_cycle'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x92f0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_mark_dup':
+(.text+0xbc20): multiple definition of `soap_mark_dup'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x9310): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_unmark':
+(.text+0xbc30): multiple definition of `soap_unmark'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x9320): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_attr_value':
+(.text+0xbc40): multiple definition of `soap_attr_value'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x94f0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_attr':
+(.text+0xbd00): multiple definition of `soap_set_attr'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x95b0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_clr_attr':
+(.text+0xc320): multiple definition of `soap_clr_attr'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x9bd0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_begin_count':
+(.text+0xc3a0): multiple definition of `soap_begin_count'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x9c50): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_begin_send':
+(.text+0xc5b0): multiple definition of `soap_begin_send'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x9e20): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_response':
+(.text+0xca30): multiple definition of `soap_response'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xa070): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_append_lab':
+(.text+0xcb20): multiple definition of `soap_append_lab'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xa160): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_store_lab':
+(.text+0xcc70): multiple definition of `soap_store_lab'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xa650): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_peek_element':
+(.text+0xcc80): multiple definition of `soap_peek_element'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xa660): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_element_begin_in':
+(.text+0xdfa0): multiple definition of `soap_element_begin_in'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xb670): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_revert':
+(.text+0xe0f0): multiple definition of `soap_revert'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xb870): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_retry':
+(.text+0xe120): multiple definition of `soap_retry'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xb8a0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_string_out':
+(.text+0xe310): multiple definition of `soap_string_out'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xbb10): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_element_start_end_out':
+(.text+0xe710): multiple definition of `soap_element_start_end_out'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xbee0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_attribute':
+(.text+0xeb40): multiple definition of `soap_attribute'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xc270): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_element':
+(.text+0xed10): multiple definition of `soap_element'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xc3a0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_element_begin_out':
+(.text+0xf6a0): multiple definition of `soap_element_begin_out'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xcb50): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_array_begin_out':
+(.text+0xf710): multiple definition of `soap_array_begin_out'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xcb90): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_element_href':
+(.text+0xf880): multiple definition of `soap_element_href'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xcd00): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_element_ref':
+(.text+0xf8f0): multiple definition of `soap_element_ref'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xcd70): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_element_null':
+(.text+0xf990): multiple definition of `soap_element_null'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xce10): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_element_id':
+(.text+0xfa80): multiple definition of `soap_element_id'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xcf00): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_attachment':
+(.text+0xfc10): multiple definition of `soap_attachment'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xd090): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_element_nil':
+(.text+0xffe0): multiple definition of `soap_element_nil'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xd460): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_element_result':
+(.text+0x10040): multiple definition of `soap_element_result'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xd4c0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2int':
+(.text+0x100e0): multiple definition of `soap_s2int'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xdc50): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2long':
+(.text+0x10190): multiple definition of `soap_s2long'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xdd00): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_LONG642s.localalias.58':
+(.text+0x10230): multiple definition of `soap_LONG642s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xdda0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_long2s':
+(.text+0x10260): multiple definition of `soap_long2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xddd0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_int2s':
+(.text+0x10270): multiple definition of `soap_int2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xdde0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outint':
+(.text+0x10280): multiple definition of `soap_outint'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xddf0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outlong':
+(.text+0x10310): multiple definition of `soap_outlong'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xde80): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outLONG64':
+(.text+0x103a0): multiple definition of `soap_outLONG64'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xdf10): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2LONG64':
+(.text+0x10430): multiple definition of `soap_s2LONG64'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xdfa0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_byte2s':
+(.text+0x104d0): multiple definition of `soap_byte2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe040): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outbyte':
+(.text+0x104e0): multiple definition of `soap_outbyte'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe050): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2byte':
+(.text+0x10570): multiple definition of `soap_s2byte'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe0e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_short2s':
+(.text+0x10600): multiple definition of `soap_short2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe170): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outshort':
+(.text+0x10610): multiple definition of `soap_outshort'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe180): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2short':
+(.text+0x106a0): multiple definition of `soap_s2short'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe210): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_float2s':
+(.text+0x10740): multiple definition of `soap_float2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe2b0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outfloat':
+(.text+0x10800): multiple definition of `soap_outfloat'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe370): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2float':
+(.text+0x10890): multiple definition of `soap_s2float'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe400): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_double2s':
+(.text+0x109d0): multiple definition of `soap_double2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe540): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outdouble':
+(.text+0x10a90): multiple definition of `soap_outdouble'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe600): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2double':
+(.text+0x10b20): multiple definition of `soap_s2double'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe690): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o):(.rodata+0x648): multiple definition of `soap_double_nan'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.rodata+0x628): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2unsignedByte':
+(.text+0x10c60): multiple definition of `soap_s2unsignedByte'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe7d0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2unsignedShort':
+(.text+0x10ce0): multiple definition of `soap_s2unsignedShort'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe850): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2unsignedInt':
+(.text+0x10d80): multiple definition of `soap_s2unsignedInt'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe8f0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2unsignedLong':
+(.text+0x10e20): multiple definition of `soap_s2unsignedLong'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xe990): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_ULONG642s.localalias.57':
+(.text+0x10ec0): multiple definition of `soap_ULONG642s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xea30): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_unsignedLong2s':
+(.text+0x10ef0): multiple definition of `soap_unsignedLong2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xea60): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_unsignedByte2s':
+(.text+0x10f00): multiple definition of `soap_unsignedByte2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xea70): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outunsignedByte':
+(.text+0x10f10): multiple definition of `soap_outunsignedByte'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xea80): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_unsignedShort2s':
+(.text+0x10fa0): multiple definition of `soap_unsignedShort2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xeb10): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outunsignedShort':
+(.text+0x10fb0): multiple definition of `soap_outunsignedShort'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xeb20): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_unsignedInt2s':
+(.text+0x11040): multiple definition of `soap_unsignedInt2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xebb0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outunsignedInt':
+(.text+0x11050): multiple definition of `soap_outunsignedInt'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xebc0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outunsignedLong':
+(.text+0x110e0): multiple definition of `soap_outunsignedLong'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xec50): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outULONG64':
+(.text+0x11170): multiple definition of `soap_outULONG64'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xece0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2ULONG64':
+(.text+0x11200): multiple definition of `soap_s2ULONG64'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xed70): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2string':
+(.text+0x112a0): multiple definition of `soap_s2string'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xee10): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2QName':
+(.text+0x11380): multiple definition of `soap_s2QName'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xeef0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_string_in':
+(.text+0x11830): multiple definition of `soap_string_in'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xf3a0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_element_end_in':
+(.text+0x12560): multiple definition of `soap_element_end_in'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x9330): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_xop_forward':
+(.text+0x127d0): multiple definition of `soap_xop_forward'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xb7c0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_ignore':
+(.text+0x12880): multiple definition of `soap_ignore'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xba90): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_QName2s':
+(.text+0x12940): multiple definition of `soap_QName2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x100b0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2wchar':
+(.text+0x12c30): multiple definition of `soap_s2wchar'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x103a0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_wchar2s':
+(.text+0x12f00): multiple definition of `soap_wchar2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x10670): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_wstring_out':
+(.text+0x13070): multiple definition of `soap_wstring_out'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xd560): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_wstring_in':
+(.text+0x13240): multiple definition of `soap_wstring_in'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xd720): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outstring':
+(.text+0x13790): multiple definition of `soap_outstring'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x107e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_instring':
+(.text+0x13850): multiple definition of `soap_instring'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x108a0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_check_result':
+(.text+0x13a60): multiple definition of `soap_check_result'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x10ab0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outwstring':
+(.text+0x13aa0): multiple definition of `soap_outwstring'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x10af0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inwstring':
+(.text+0x13b60): multiple definition of `soap_inwstring'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x10bb0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_timegm':
+(.text+0x13d70): multiple definition of `soap_timegm'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x10dc0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_dateTime2s':
+(.text+0x14880): multiple definition of `soap_dateTime2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x10dd0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outdateTime':
+(.text+0x14930): multiple definition of `soap_outdateTime'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x10e80): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2dateTime':
+(.text+0x149c0): multiple definition of `soap_s2dateTime'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x10f10): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outliteral':
+(.text+0x14e50): multiple definition of `soap_outliteral'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x113a0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inliteral':
+(.text+0x15030): multiple definition of `soap_inliteral'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x11580): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_outwliteral':
+(.text+0x151b0): multiple definition of `soap_outwliteral'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x11700): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inwliteral':
+(.text+0x15370): multiple definition of `soap_inwliteral'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x118c0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_value':
+(.text+0x154d0): multiple definition of `soap_value'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x11a20): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inint':
+(.text+0x15610): multiple definition of `soap_inint'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x11b30): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inlong':
+(.text+0x157b0): multiple definition of `soap_inlong'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x11cd0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inLONG64':
+(.text+0x15950): multiple definition of `soap_inLONG64'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x11e70): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inbyte':
+(.text+0x15b90): multiple definition of `soap_inbyte'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x120b0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inshort':
+(.text+0x15ce0): multiple definition of `soap_inshort'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x12200): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_infloat':
+(.text+0x15e60): multiple definition of `soap_infloat'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x12380): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_indouble':
+(.text+0x15f90): multiple definition of `soap_indouble'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x124b0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inunsignedByte':
+(.text+0x160c0): multiple definition of `soap_inunsignedByte'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x125e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inunsignedShort':
+(.text+0x16210): multiple definition of `soap_inunsignedShort'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x12730): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inunsignedInt':
+(.text+0x16390): multiple definition of `soap_inunsignedInt'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x128b0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inunsignedLong':
+(.text+0x16530): multiple definition of `soap_inunsignedLong'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x12a50): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_inULONG64':
+(.text+0x166d0): multiple definition of `soap_inULONG64'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x12bf0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_indateTime':
+(.text+0x168c0): multiple definition of `soap_indateTime'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x12de0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_getline':
+(.text+0x16a10): multiple definition of `soap_getline'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x12f30): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_dime_option':
+(.text+0x16b30): multiple definition of `soap_dime_option'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x13050): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_putdimehdr':
+(.text+0x16bc0): multiple definition of `soap_putdimehdr'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x130e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_putdime':
+(.text+0x16dd0): multiple definition of `soap_putdime'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x132f0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_getdimehdr':
+(.text+0x170c0): multiple definition of `soap_getdimehdr'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x135e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_post_check_mime_attachments':
+(.text+0x172d0): multiple definition of `soap_post_check_mime_attachments'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x137f0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_match_cid':
+(.text+0x172e0): multiple definition of `soap_match_cid'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x13800): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_getdime':
+(.text+0x17480): multiple definition of `soap_getdime'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x139a0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_putmimehdr':
+(.text+0x17920): multiple definition of `soap_putmimehdr'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x13e40): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_putmime':
+(.text+0x17a40): multiple definition of `soap_putmime'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x13f60): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_end_send':
+(.text+0x17c40): multiple definition of `soap_end_send'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x14160): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_dime':
+(.text+0x17d30): multiple definition of `soap_set_dime'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x14250): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_mime':
+(.text+0x17d50): multiple definition of `soap_set_mime'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x14270): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_clr_dime':
+(.text+0x17da0): multiple definition of `soap_clr_dime'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x142c0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_clr_mime':
+(.text+0x17dc0): multiple definition of `soap_clr_mime'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x142e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_dealloc':
+(.text+0x17e00): multiple definition of `soap_dealloc'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x14320): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_end':
+(.text+0x17f00): multiple definition of `soap_end'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x14420): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_copy_context':
+(.text+0x17f70): multiple definition of `soap_copy_context'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x14490): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_copy':
+(.text+0x18250): multiple definition of `soap_copy'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x14740): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_dime_attachment':
+(.text+0x182a0): multiple definition of `soap_set_dime_attachment'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x14790): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_mime_attachment':
+(.text+0x18330): multiple definition of `soap_set_mime_attachment'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x14820): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_getmimehdr':
+(.text+0x183d0): multiple definition of `soap_getmimehdr'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x148c0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_get_mime_attachment':
+(.text+0x18680): multiple definition of `soap_get_mime_attachment'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x14b70): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_end_recv':
+(.text+0x18c40): multiple definition of `soap_end_recv'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x15130): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_getmime':
+(.text+0x18c20): multiple definition of `soap_getmime'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x15110): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_check_mime_attachments':
+(.text+0x19020): multiple definition of `soap_check_mime_attachments'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x15370): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_next_multipart':
+(.text+0x19050): multiple definition of `soap_next_multipart'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x153a0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_begin_recv':
+(.text+0x19070): multiple definition of `soap_begin_recv'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x153c0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_envelope_begin_out':
+(.text+0x19c90): multiple definition of `soap_envelope_begin_out'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x15c30): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_envelope_end_out':
+(.text+0x19e30): multiple definition of `soap_envelope_end_out'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x15dd0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_get_http_body':
+(.text+0x1a010): multiple definition of `soap_get_http_body'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x15fb0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_envelope_begin_in':
+(.text+0x1a1a0): multiple definition of `soap_envelope_begin_in'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x16140): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_envelope_end_in':
+(.text+0x1a250): multiple definition of `soap_envelope_end_in'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x161f0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_body_begin_out':
+(.text+0x1a280): multiple definition of `soap_body_begin_out'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x16220): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_body_end_out':
+(.text+0x1a310): multiple definition of `soap_body_end_out'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x162b0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_body_begin_in':
+(.text+0x1a360): multiple definition of `soap_body_begin_in'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x16300): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_body_end_in':
+(.text+0x1a3c0): multiple definition of `soap_body_end_in'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x16360): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_recv_header':
+(.text+0x1a400): multiple definition of `soap_recv_header'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x163a0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_endpoint':
+(.text+0x1a460): multiple definition of `soap_set_endpoint'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x16400): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_connect_command':
+(.text+0x1aa40): multiple definition of `soap_connect_command'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x169b0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_connect':
+(.text+0x1ab90): multiple definition of `soap_connect'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x16b00): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2base64':
+(.text+0x1aba0): multiple definition of `soap_s2base64'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x16b10): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_putbase64':
+(.text+0x1ace0): multiple definition of `soap_putbase64'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2650): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_base642s':
+(.text+0x1ae90): multiple definition of `soap_base642s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x16c50): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o):(.rodata+0x5a0): multiple definition of `soap_base64i'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.rodata+0x580): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_getbase64':
+(.text+0x1b050): multiple definition of `soap_getbase64'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xa410): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_s2hex':
+(.text+0x1ba00): multiple definition of `soap_s2hex'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x173e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_puthex':
+(.text+0x1bad0): multiple definition of `soap_puthex'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x2580): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_hex2s':
+(.text+0x1bbd0): multiple definition of `soap_hex2s'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x174b0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_gethex':
+(.text+0x1bd30): multiple definition of `soap_gethex'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0xa2b0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_puthttphdr':
+(.text+0x1bef0): multiple definition of `soap_puthttphdr'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x17610): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_fault':
+(.text+0x1cba0): multiple definition of `soap_set_fault'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x181e0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_send_fault':
+(.text+0x1d4b0): multiple definition of `soap_send_fault'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x18aa0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_begin_serve':
+(.text+0x1d6e0): multiple definition of `soap_begin_serve'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x18cd0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_recv_fault':
+(.text+0x1d750): multiple definition of `soap_recv_fault'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x18d40): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_send_empty_response':
+(.text+0x1d950): multiple definition of `soap_send_empty_response'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x18f40): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_sender_error':
+(.text+0x1d9d0): multiple definition of `soap_set_sender_error'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x18fc0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_set_receiver_error':
+(.text+0x1da10): multiple definition of `soap_set_receiver_error'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x19000): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_bind':
+(.text+0x1ddf0): multiple definition of `soap_bind'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x19040): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_accept':
+(.text+0x1e470): multiple definition of `soap_accept'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x19670): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_recv_empty_response':
+(.text+0x20550): multiple definition of `soap_recv_empty_response'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1ab90): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_sender_fault_subcode':
+(.text+0x20680): multiple definition of `soap_sender_fault_subcode'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1acc0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_sender_fault':
+(.text+0x206c0): multiple definition of `soap_sender_fault'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1ad00): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_receiver_fault_subcode':
+(.text+0x206d0): multiple definition of `soap_receiver_fault_subcode'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1ad10): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_receiver_fault':
+(.text+0x20710): multiple definition of `soap_receiver_fault'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1ad50): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_print_fault':
+(.text+0x20720): multiple definition of `soap_print_fault'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1ad60): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_sprint_fault':
+(.text+0x20840): multiple definition of `soap_sprint_fault'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1ae80): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_print_fault_location':
+(.text+0x20980): multiple definition of `soap_print_fault_location'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1afc0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_register_plugin_arg':
+(.text+0x20a90): multiple definition of `soap_register_plugin_arg'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1b0d0): first defined here
+/usr/lib//libgsoapssl.a(libgsoapssl_a-stdsoap2_ssl.o): In function `soap_lookup_plugin':
+(.text+0x20b50): multiple definition of `soap_lookup_plugin'
+/usr/lib//libgsoap.a(libgsoap_a-stdsoap2.o):(.text+0x1b190): first defined here
+/usr/bin/ld: cannot find -lopenssl
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:22: dev_mgr] Error 1
